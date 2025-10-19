@@ -1,0 +1,122 @@
+.datetime-checker {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 2rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.datetime-checker h1 {
+  text-align: center;
+  color: #646cff;
+  margin-bottom: 2rem;
+}
+
+.current-time-section,
+.calculator-section {
+  background: #f9f9f9;
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.current-time-section h2,
+.calculator-section h2 {
+  color: #333;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+.time-display {
+  text-align: center;
+}
+
+.time-display .date {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #646cff;
+  margin: 0.5rem 0;
+}
+
+.time-display .time {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333;
+  margin: 0.5rem 0;
+}
+
+.time-display .day {
+  font-size: 1rem;
+  color: #666;
+  margin: 0.5rem 0;
+}
+
+.time-display .timestamp {
+  font-size: 0.9rem;
+  color: #999;
+  margin-top: 1rem;
+}
+
+.input-group {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.date-input {
+  flex: 1;
+  padding: 0.75rem;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.3s;
+}
+
+.date-input:focus {
+  outline: none;
+  border-color: #646cff;
+}
+
+.calculate-btn {
+  padding: 0.75rem 1.5rem;
+  background: #646cff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.calculate-btn:hover {
+  background: #535bf2;
+}
+
+.result {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.result h3 {
+  color: #646cff;
+  margin-bottom: 1rem;
+}
+
+.result .difference {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #333;
+}
+
+@media (max-width: 640px) {
+  .input-group {
+    flex-direction: column;
+  }
+  
+  .datetime-checker {
+    padding: 1rem;
+  }
+}
