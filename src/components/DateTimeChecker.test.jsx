@@ -89,4 +89,16 @@ describe('DateTimeChecker Component', () => {
     
     expect(screen.getByText(/Đã qua/i)).toBeDefined();
   });
+
+  // ✅ TEST PASS - Demo CI/CD success
+  it('[PASS] should validate correct behavior - CI will pass', () => {
+    const result = 2 + 2;
+    expect(result).toBe(4); // This will PASS
+  });
+
+  // ❌ TEST FAIL - Demo CI/CD failure (comment this to make CI pass)
+  it('[FAIL] should intentionally fail - CI will fail', () => {
+    const result = 2 + 2;
+    expect(result).toBe(5); // This will FAIL - 2+2 is not 5!
+  });
 });
