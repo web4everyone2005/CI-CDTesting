@@ -32,4 +32,10 @@ describe('DateTimeChecker Component Tests', () => {
     const isValid = true;
     expect(isValid).toBe(true);
   });
+
+  // ❌ FAILING TEST - This will make CI fail
+  it('[FAIL] This test will fail - CI should catch this error', () => {
+    const result = 10 / 2;
+    expect(result).toBe(999); // Wrong! 10/2 = 5, not 999
+  });
 });
