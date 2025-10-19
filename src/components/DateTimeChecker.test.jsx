@@ -96,9 +96,9 @@ describe('DateTimeChecker Component', () => {
     expect(result).toBe(4); // This will PASS
   });
 
-  // ❌ TEST FAIL - Demo CI/CD failure (comment this to make CI pass)
-  it('[FAIL] should intentionally fail - CI will fail', () => {
+  // ✅ TEST PASS - Fixed the failing test
+  it('[PASS] should pass after fix - CI will succeed', () => {
     const result = 2 + 2;
-    expect(result).toBe(5); // This will FAIL - 2+2 is not 5!
+    expect(result).toBe(4); // Fixed: 2+2 = 4!
   });
 });
